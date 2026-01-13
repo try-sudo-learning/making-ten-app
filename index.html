@@ -12,7 +12,7 @@
             background-color: #f0fdf4;
         }
         .kids-font {
-            font-family: 'ZCOOL+KuaiLe', cursive;
+            font-family: 'ZCOOL KuaiLe', cursive;
         }
         .ten-frame-grid {
             display: grid;
@@ -73,6 +73,16 @@
         .tab-btn.active {
             background-color: #dbeafe; /* bg-blue-100 */
             color: #1d4ed8; /* text-blue-700 */
+        }
+
+        /* 贊助按鈕區塊樣式 */
+        .bmc-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 2rem 0;
+            background-color: #f9fafb;
+            border-top: 1px solid #e5e7eb;
         }
     </style>
 </head>
@@ -189,6 +199,12 @@
             </div>
         </div>
 
+        <!-- 贊助區域 (按鈕模式) -->
+        <div class="bmc-container">
+            <p class="text-sm text-gray-500 mb-3">覺得有幫助嗎？支持我開發更多教具！</p>
+            <script type="text/javascript" src="https://cdnjs.buymeacoffee.com/1.0.0/button.prod.min.js" data-name="bmc-button" data-slug="jguaf" data-color="#40DCA5" data-emoji="🥛"  data-font="Lato" data-text="Buy me a Milk" data-outline-color="#000000" data-font-color="#ffffff" data-coffee-color="#FFDD00" ></script>
+        </div>
+
         <!-- Footer Score -->
         <div class="bg-gray-50 p-4 border-t border-gray-100 flex justify-between items-center">
             <span class="text-gray-500 text-sm italic">學好合十法，數學頂呱呱！</span>
@@ -207,6 +223,9 @@
             <button onclick="closeMsg()" class="bg-green-500 text-white px-10 py-3 rounded-full font-bold text-xl hover:bg-green-600 transition transform hover:scale-105">挑戰下一題</button>
         </div>
     </div>
+
+    <!-- Buy Me a Coffee Widget (側邊小工具) -->
+    <script data-name="BMC-Widget" data-cfasync="false" src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js" data-id="jguaf" data-description="Support me on Buy me a coffee!" data-message="Thank you for your Support !!!" data-color="#40DCA5" data-position="Right" data-x_margin="18" data-y_margin="18"></script>
 
     <script>
         let score = 0;
