@@ -3,7 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>小學數學樂園 - 認識合十法</title>
+
+    <!-- === SEO 優化區塊 Start === -->
+    <title>小一數學湊十法練習：互動遊戲輕鬆學好合十法 | 數學合十法樂園</title>
+    <meta name="description" content="專為小一學生設計的數學湊十法練習工具。透過互動十格陣遊戲與步驟教學，讓孩子快速掌握合十法與進位加法，打好數學基礎。免費線上數學教材推薦。">
+    <meta name="keywords" content="湊十法, 合十法, 小一數學練習, 十格陣, 數學遊戲, 國小數學教材, 線上數學工具, 進位加法">
+    <meta name="author" content="Math Fun Park">
+    
+    <!-- Open Graph (Facebook/LINE 分享優化) -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="小一數學湊十法練習：互動遊戲輕鬆學好合十法">
+    <meta property="og:description" content="互動式十格陣教學，讓孩子愛上數學！免費線上學習工具。">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1509228468518-180dd4864904?q=80&w=1000">
+
+    <!-- Google 結構化資料 (JSON-LD) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "EducationalOccupationalCredential",
+      "name": "數學合十法樂園",
+      "description": "提供小一學生練習湊十法的互動教育工具。",
+      "educationalLevel": "Primary School",
+      "audience": {
+        "@type": "EducationalAudience",
+        "educationalRole": "student"
+      }
+    }
+    </script>
+    <!-- === SEO 優化區塊 End === -->
+
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=ZCOOL+KuaiLe&display=swap" rel="stylesheet">
     <style>
@@ -202,7 +230,7 @@
         <!-- 贊助區域 (按鈕模式) -->
         <div class="bmc-container">
             <p class="text-sm text-gray-500 mb-3">覺得有幫助嗎？支持我開發更多教具！</p>
-            <script type="text/javascript" src="https://cdnjs.buymeacoffee.com/1.0.0/button.prod.min.js" data-name="bmc-button" data-slug="jguaf" data-color="#40DCA5" data-emoji="❤️"  data-font="Lato" data-text="Support this Lesson" data-outline-color="#000000" data-font-color="#ffffff" data-coffee-color="#FFDD00" ></script>
+            <script type="text/javascript" src="https://cdnjs.buymeacoffee.com/1.0.0/button.prod.min.js" data-name="bmc-button" data-slug="jguaf" data-color="#40DCA5" data-emoji="❤️"  data-font="Lato" data-text="支持開發課程" data-outline-color="#000000" data-font-color="#ffffff" data-coffee-color="#FFDD00" ></script>
         </div>
 
         <!-- Footer Score -->
@@ -259,6 +287,7 @@
         // Tab 1: Intro
         function initIntro() {
             const grid = document.getElementById('friends-grid');
+            grid.innerHTML = ''; // Ensure clear before adding
             for (let i = 1; i <= 9; i++) {
                 const card = document.createElement('div');
                 card.className = "number-card bg-white border-2 border-green-300 rounded-xl p-4 text-2xl font-bold text-green-600 shadow-sm text-center hover:bg-green-50";
@@ -417,4 +446,3 @@
     </script>
 </body>
 </html>
-
